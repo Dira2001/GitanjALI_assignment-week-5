@@ -2,7 +2,5 @@ BEGIN
   DBMS_METADATA.EXPORT_ALL_OBJECTS(
     export_type := 'TABLE',
     schema_name := 'source_schema',
-    export_file := 'output.sql',
-    tables := 'table1,table2,table3',
-    columns := 'column1,column2,column3');
+    export_file := 'output.sql');
 END;
