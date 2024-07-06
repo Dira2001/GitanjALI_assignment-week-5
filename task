@@ -1,0 +1,12 @@
+--csv
+SELECT /csv/ * FROM my_table;
+
+--parquet
+BEGIN
+  DBMS_PARQUET.CREATE_FILE('output.parquet', 'my_table');
+END;
+
+--avro
+BEGIN
+  DBMS_AVRO.CREATE_FILE('output.avro', 'my_table');
+END;
